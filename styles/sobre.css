@@ -1,0 +1,50 @@
+section.formacao {
+  margin-top: 100px;
+  padding: 40px 4%;
+}
+
+section.formacao .container {
+  justify-content: space-around;
+  align-items: center;
+  gap: 90px;
+}
+
+.formacao .txt-formacao h2 > span {
+  color: #44e868;
+}
+
+.formacao .card-formacao {
+  margin: 40px 0;
+  padding: 20px;
+  line-height: calc(1rem * 1.5);
+  background-color: #0e0e0e;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #44e868;
+  border-right: 15px solid #44e868;
+}
+
+.formacao .card-formacao h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 2.625rem;
+  position: relative;
+}
+
+.formacao .card-formacao p {
+  color: #9c9c9c;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.formacao .txt-formacao .card-formacao span {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #31fa5d7a;
+
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.formacao .img-formacao img {
+  max-width: 100%;
+}

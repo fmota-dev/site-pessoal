@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #131313;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.btn-contato button {
+  padding: 0.625rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: #44e868;
+  border: 0;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover,
+form .btn-enviar input[type="submit"]:hover {
+  box-shadow: 0 0 10px #3dd25e;
+  transform: scale(1.05);
+}
+
+h2.titulo {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-top: 90px;
+  margin-bottom: 75px;
+}
+
+h2.titulo span {
+  color: #44e868;
+}
+
+footer p {
+  background-color: #0e0e0e;
+  padding: 40px 4%;
+  text-align: center;
+  color: #fff;
+}
