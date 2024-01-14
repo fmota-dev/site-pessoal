@@ -1,10 +1,10 @@
-@import "/styles/global.css";
-@import "/styles/header.css";
+@import "./global.css";
+@import "./header.css";
 
-@import "/styles/inicio.css";
-@import "/styles/sobre.css";
-@import "/styles/formacao.css";
-@import "/styles/projetos.css";
-@import "/styles/formulario.css";
+@import "./inicio.css";
+@import "./sobre.css";
+@import "./formacao.css";
+@import "./projetos.css";
+@import "./formulario.css";
 
-@import "/styles/responsivo.css";
+@import "./responsivo.css";
