@@ -38,7 +38,8 @@ section.projetos .box-projetos {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  gap: 10px;
+  opacity: 1;
   transition: 0.5s;
 }
 
@@ -47,6 +48,10 @@ section.projetos .box-projetos {
   font-weight: 600;
   color: #fff;
   text-decoration: none;
+}
+
+.overlay a:hover {
+  color: #44e868;
 }
 
 .overlay:hover {
