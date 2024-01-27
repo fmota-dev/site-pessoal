@@ -54,6 +54,10 @@
 }
 
 @media (max-width: 550px) {
+  #voltar-ao-topo {
+    display: none;
+  }
+
   html {
     font-size: 0.8rem;
   }
