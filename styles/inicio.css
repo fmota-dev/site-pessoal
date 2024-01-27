@@ -1,26 +1,26 @@
-section.topo-do-site {
+section.inicio {
   padding: 2.5rem 4%;
   margin-top: 7.2rem;
 }
 
-section.topo-do-site .container {
+section.inicio .container {
   align-items: center;
   justify-content: center;
   gap: 90px;
 }
 
-.topo-do-site .txt-topo-site h1 {
+.inicio .txt-inicio h1 {
   color: #fff;
   font-size: 4.5rem;
   line-height: 5rem;
   max-width: 30ch;
 }
 
-.topo-do-site .txt-topo-site h1 span {
+.inicio .txt-inicio h1 span {
   color: #44e868;
 }
 
-.topo-do-site .txt-topo-site p {
+.inicio .txt-inicio p {
   color: #9c9c9c;
   line-height: calc(1rem * 1.5);
   margin-top: 30px;
@@ -28,7 +28,7 @@ section.topo-do-site .container {
   max-width: 50ch;
 }
 
-.topo-do-site .txt-topo-site .btn-social {
+.inicio .txt-inicio .btn-social {
   margin-top: 35px;
 }
 
@@ -43,11 +43,11 @@ section.topo-do-site .container {
   transition: 0.2s;
 }
 
-.topo-do-site .txt-topo-site .btn-social a + a {
+.inicio .txt-inicio .btn-social a + a {
   margin-left: 15px;
 }
 
-.topo-do-site .img-topo-site img {
+.inicio .img-inicio img {
   max-width: 100%;
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
