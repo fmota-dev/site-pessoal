@@ -8,19 +8,24 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
     <!-- FIM GOOGLE FONTS -->
 
     <!-- BOOTSRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- FIM BOOTSRAP ICONS -->
 
-    <script src="menu.js" defer></script>
+    <script src="script.js" defer></script>
 
     <title>fmota-dev</title>
 </head>
 
 <body>
+    <a href="#topo" id="voltar-ao-topo" title="Voltar ao topo">
+        <i class="bi bi-arrow-90deg-up"></i>
+    </a>
+
     <header>
         <div class="container">
             <div class="logo">
@@ -74,14 +79,30 @@
                 <div class="txt-inicio">
                     <h1>Muito prazer, <span>me chamo Filipe Mota.</span></h1>
 
-                    <p>Atualmente, estou imerso no universo do Desenvolvimento Web, concentrando meus estudos nas áreas de front-end, back-end e Mobile. Além de me especializar em UX/UI Designer.</p>
+                    <p>Atualmente, estou imerso no universo do Desenvolvimento Web, concentrando meus estudos nas áreas
+                        de front-end, back-end e Mobile. Além de me especializar em UX/UI Designer.</p>
 
-                    <p> Estou entusiasmado em aplicar essas habilidades e conhecimentos no cenário do Desenvolvimento Web, contribuindo para projetos inovadores e desafiadores.</p>
+                    <p> Estou entusiasmado em aplicar essas habilidades e conhecimentos no cenário do Desenvolvimento
+                        Web, contribuindo para projetos inovadores e desafiadores.</p>
 
                     <div class="btn-social">
-                        <a href="https://wa.me/5584988139069" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
-                        <a href="https://www.linkedin.com/in/fmota-dev/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/fmota-dev" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://wa.me/5584988139069" target="_blank">
+                            <button>
+                                <i class="bi bi-whatsapp"></i>
+                            </button>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/fmota-dev/" target="_blank">
+                            <button>
+                                <i class="bi bi-linkedin"></i>
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/fmota-dev" target="_blank">
+                            <button>
+                                <i class="bi bi-github"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
 
@@ -171,7 +192,8 @@
                         <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
                         <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
                         <input type="tel" name="numero" id="numero" placeholder="Seu número:">
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem"
+                            required></textarea>
                         <div class="btn-enviar">
                             <input type="submit" value="ENVIAR">
                         </div>

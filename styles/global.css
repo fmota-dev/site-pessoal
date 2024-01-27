@@ -16,6 +16,24 @@ body {
   display: flex;
 }
 
+#voltar-ao-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Mudança para o lado direito */
+  display: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #44e868;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#voltar-ao-topo:hover {
+  opacity: 0.9;
+}
+
 .btn-contato button {
   padding: 0.625rem 2.5rem;
   font-size: 1.125rem;
