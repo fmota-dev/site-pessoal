@@ -38,7 +38,7 @@
   }
 
   .inicio .txt-inicio h1 {
-    color: #fff;
+    color: var(--cor-g00);
     font-size: 48px;
     line-height: 60px;
     max-width: 20ch;
@@ -74,7 +74,7 @@
   }
 
   .btn-abrir-menu-mobile i {
-    color: #44e868;
+    color: var(--cor-p1);
     font-size: 45px;
   }
 

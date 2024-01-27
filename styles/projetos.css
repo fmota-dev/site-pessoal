@@ -1,7 +1,7 @@
 section.projetos {
   padding: 4.5rem 4%;
-  border-bottom: 1px solid #1e751b;
-  background-color: #0e0e0e;
+  border-bottom: 1px solid var(--cor-p3);
+  background-color: var(--cor-g04);
 }
 
 section.projetos .container {
@@ -15,7 +15,7 @@ section.projetos .box-projetos {
 }
 
 .img-projeto {
-  box-shadow: 0 0 3px #44e868;
+  box-shadow: 0 0 3px var(--cor-p1);
   height: 500px;
   background-size: cover;
   background-position: 100% 0%;
@@ -50,13 +50,13 @@ section.projetos .box-projetos {
   gap: 10px;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--cor-g00);
   text-decoration: none;
 }
 
 .overlay a:hover {
   font-weight: bold;
-  color: #44e868;
+  color: var(--cor-p1);
 }
 
 .overlay:hover {
