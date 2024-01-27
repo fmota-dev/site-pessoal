@@ -16,11 +16,6 @@ body {
   display: flex;
 }
 
-.linha-detalhe {
-  border-top: 1px solid #1c712f;
-  padding-top: 130px;
-}
-
 .btn-contato button {
   padding: 0.625rem 2.5rem;
   font-size: 1.125rem;
@@ -41,7 +36,6 @@ form .btn-enviar input[type="submit"]:hover {
 h2.titulo {
   color: #fff;
   font-size: 3.5rem;
-  margin-top: 90px;
   margin-bottom: 75px;
 }
 

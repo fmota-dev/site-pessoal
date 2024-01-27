@@ -1,5 +1,7 @@
 section.projetos {
-  padding: 40px 4%;
+  padding: 4.5rem 4%;
+  border-bottom: 1px solid #1e751b;
+  background-color: #0e0e0e;
 }
 
 section.projetos .container {

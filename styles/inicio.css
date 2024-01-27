@@ -1,6 +1,7 @@
 section.inicio {
-  padding: 2.5rem 4%;
-  margin-top: 7.2rem;
+  padding: 4.5rem 4%;
+  background-color: #0e0e0e;
+  border-bottom: 1px solid #1e751b;
 }
 
 section.inicio .container {

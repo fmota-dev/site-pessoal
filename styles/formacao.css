@@ -1,6 +1,6 @@
 section.formacao {
-  margin-top: 100px;
-  padding: 40px 4%;
+  padding: 4.5rem 4%;
+  border-bottom: 1px solid #1e751b;
 }
 
 section.formacao .container {
