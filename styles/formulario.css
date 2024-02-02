@@ -1,18 +1,18 @@
-section.formulario {
+.formulario {
   padding: 40px 4%;
 }
 
-section.formulario .container {
+.formulario .container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  max-width: 500px;
 }
 
-.img-formulario img {
-  max-width: 100%;
+.formulario h2 {
+  margin-bottom: 0px;
 }
-
 .txt-formulario {
   min-width: 100%;
   margin-top: 50px;
@@ -20,6 +20,7 @@ section.formulario .container {
 
 form {
   max-width: 500px;
+  padding-top: 30px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -27,7 +28,12 @@ form {
   gap: 15px;
 }
 
-form input,
+form label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--cor-p1);
+}
+
 form textarea {
   width: 100%;
   background-color: #242424;
@@ -36,47 +42,24 @@ form textarea {
   padding: 20px 15px;
   border-radius: 15px;
   color: var(--cor-g00);
-  font-size: 1.125rem;
-}
-
-form textarea {
+  font-size: 1rem;
   resize: none;
   max-height: 150px;
 }
 
-form .btn-enviar {
+form button {
+  border: none;
   margin-top: 20px;
-}
-
-form .btn-enviar input[type="submit"] {
   padding: 10px 20px;
   border-radius: 40px;
-  width: 120px;
+  width: max-content;
   background-color: var(--cor-p1);
   color: #000;
   font-weight: 600;
   cursor: pointer;
 }
 
-div.box-fale-comigo {
+.btn-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.box-fale-comigo h2 {
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.box-fale-comigo a + a {
-  margin-left: 5px;
-}
-
-.box-fale-comigo p,
-.box-fale-comigo a {
-  margin-top: 20px;
-  color: var(--cor-g00);
-  text-decoration: none;
+  justify-content: space-between;
 }
