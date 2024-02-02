@@ -31,7 +31,11 @@ form {
 form label {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--cor-p1);
+  color: var(--cor-g00);
+}
+
+form label span {
+  color: var(--cor-p2);
 }
 
 form textarea {
@@ -47,19 +51,18 @@ form textarea {
   max-height: 150px;
 }
 
-form button {
+form button.btn-contato {
+  padding: 0.625rem 1.5rem;
   border: none;
-  margin-top: 20px;
-  padding: 10px 20px;
-  border-radius: 40px;
-  width: max-content;
   background-color: var(--cor-p1);
-  color: #000;
+  border-radius: 40px;
+  font-size: 1rem;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .btn-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
