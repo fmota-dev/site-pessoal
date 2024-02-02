@@ -23,6 +23,15 @@
     <script src="js/voltar-ao-topo.js" defer></script>
     <script src="js/enviar-mensagem.js" defer></script>
 
+    <script>
+        window.onload = function () {
+            if (window.location.search.length > 0) {
+                var novaURL = window.location.href.split('?')[0];
+                window.history.replaceState({}, document.title, novaURL);
+            }
+        };
+    </script>
+
     <title>fmota-dev</title>
 </head>
 
