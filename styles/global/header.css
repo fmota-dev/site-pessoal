@@ -13,26 +13,37 @@ header .logo a {
   padding: 0;
 }
 
-header a {
-  display: inline-block;
-  color: #9c9c9c;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-header .menu-desktop a:hover {
-  color: var(--cor-g00);
-  transform: scale(1.05);
-}
-
-header nav.menu-desktop ul {
+.menu-desktop ul {
   display: flex;
-  gap: 20px;
+  gap: 60px;
   list-style: none;
 }
 
-header nav.menu-desktop ul li {
+.menu-desktop ul li {
   font-size: 1.2rem;
+}
+
+.menu-desktop a {
+  display: inline-block;
+  position: relative;
+  color: #9c9c9c;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+.menu-desktop a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--cor-g00);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.menu-desktop a:hover::after {
+  width: 100%;
 }
 
 .overlay-menu {
@@ -84,6 +95,7 @@ header nav.menu-desktop ul li {
   display: flex;
   flex-direction: column;
   text-align: right;
+  gap: 25px;
 }
 
 .menu-mobile nav ul li a {
