@@ -72,3 +72,13 @@ section.projetos .box-projetos {
 .projetos .btn-contato i {
   margin-left: 5px;
 }
+
+@media (max-width: 550px) {
+  section.projetos .box-projetos {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .img-projeto {
+    height: 300px;
+  }
+}

@@ -62,3 +62,38 @@ section.inicio .container {
     top: 30px;
   }
 }
+
+@media (max-width: 1100px) {
+  section.inicio {
+    margin-top: 0;
+  }
+
+  div.txt-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .inicio .img-inicio img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .inicio .txt-inicio h1 {
+    color: var(--cor-g00);
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 20ch;
+  }
+}
+
+@media (max-width: 550px) {
+  .inicio .txt-inicio p {
+    margin-bottom: 0;
+  }
+
+  .btn-social button {
+    width: 40px;
+    height: 40px;
+  }
+}

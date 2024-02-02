@@ -48,3 +48,19 @@ section.formacao .container {
 .formacao .img-formacao img {
   max-width: 100%;
 }
+
+@media (max-width: 1100px) {
+  .formacao .img-formacao img {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  section.formacao {
+    margin: 0;
+  }
+
+  section.formacao .container {
+    gap: 0px;
+  }
+}

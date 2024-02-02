@@ -66,3 +66,9 @@ form button.btn-contato {
   align-items: center;
   margin-top: 20px;
 }
+
+@media (max-width: 1100px) {
+  div.box-fale-comigo {
+    margin-bottom: 40px;
+  }
+}
