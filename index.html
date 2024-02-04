@@ -19,19 +19,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <script src="js/plugins/simple-anime.js" defer></script>
+    <script src="js/main.js" defer></script>
     <script src="js/menu-mobile.js" defer></script>
     <script src="js/voltar-ao-topo.js" defer></script>
     <script src="js/enviar-mensagem.js" defer></script>
-
-    <script>
-        window.onload = function () {
-            if (window.location.search.length > 0) {
-                var novaURL = window.location.href.split('?')[0];
-                window.history.replaceState({}, document.title, novaURL);
-            }
-        };
-    </script>
-
     <title>fmota-dev</title>
 </head>
 
@@ -91,12 +83,12 @@
         <section class="inicio" id="inicio">
             <div class="container">
                 <div class="txt-inicio">
-                    <h1>Muito prazer, <span>me chamo Filipe Mota.</span></h1>
+                    <h1 data-anime="200">Muito prazer, <span data-anime="200">me chamo Filipe Mota.</span></h1>
 
-                    <p>Atualmente, estou imerso no universo do Desenvolvimento Web, concentrando meus estudos nas áreas
+                    <p data-anime="400">Atualmente, estou imerso no universo do Desenvolvimento Web, concentrando meus estudos nas áreas
                         de front-end, back-end e Mobile. Além de me especializar em UX/UI Designer.</p>
 
-                    <p> Estou entusiasmado em aplicar essas habilidades e conhecimentos no cenário do Desenvolvimento
+                    <p data-anime="400"> Estou entusiasmado em aplicar essas habilidades e conhecimentos no cenário do Desenvolvimento
                         Web, contribuindo para projetos inovadores e desafiadores.</p>
 
                     <div class="btn-social">
