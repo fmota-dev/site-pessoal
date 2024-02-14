@@ -38,7 +38,7 @@ section.inicio .container {
   height: 60px;
   border-radius: 50%;
   border: none;
-  background-color: var(--cor-p1);
+  background: var(--gradiente);
   font-size: 1.375rem;
   cursor: pointer;
   transition: 0.2s;

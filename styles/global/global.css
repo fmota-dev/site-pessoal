@@ -29,7 +29,7 @@ body {
   display: none;
   font-size: 24px;
   padding: 10px 20px;
-  background-color: var(--cor-p1);
+  background: var(--gradiente);
   color: black;
   border-radius: 4px;
   cursor: pointer;
@@ -44,7 +44,7 @@ body {
   padding: 0.625rem 2.5rem;
   font-size: 1.125rem;
   font-weight: 600;
-  background-color: var(--cor-p1);
+  background: var(--gradiente);
   border: 0;
   border-radius: 2.5rem;
   cursor: pointer;

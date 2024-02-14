@@ -54,7 +54,7 @@ form textarea {
 form button.btn-contato {
   padding: 0.625rem 1.5rem;
   border: none;
-  background-color: var(--cor-p1);
+  background: var(--gradiente);
   border-radius: 40px;
   font-size: 1rem;
   font-weight: 600;
