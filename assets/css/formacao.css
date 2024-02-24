@@ -1,9 +1,9 @@
-section.formacao {
+.formacao {
   padding: 4.5rem 4%;
   border-bottom: 1px solid var(--cor-p3);
 }
 
-section.formacao .container {
+.formacao .container {
   justify-content: space-between;
   align-items: center;
   gap: 90px;

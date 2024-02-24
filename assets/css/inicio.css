@@ -1,10 +1,10 @@
-section.inicio {
+.inicio {
   padding: 4.5rem 4%;
   background-color: var(--cor-g04);
   border-bottom: 1px solid var(--cor-p3);
 }
 
-section.inicio .container {
+.inicio .container {
   align-items: center;
   justify-content: center;
   gap: 90px;

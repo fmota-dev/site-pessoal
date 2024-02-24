@@ -1,14 +1,14 @@
-section.projetos {
+.projetos {
   padding: 4.5rem 4%;
   border-bottom: 1px solid var(--cor-p3);
   background-color: var(--cor-g04);
 }
 
-section.projetos .container {
+.projetos .container {
   flex-direction: column;
 }
 
-section.projetos .box-projetos {
+.projetos .box-projetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 40px;

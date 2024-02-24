@@ -10,7 +10,7 @@
     <meta name="keywords" content="Desenvolvimento Web, Front-end, Back-end, Mobile, UX/UI Design, HTML, CSS, JavaScript, React, Node.js, PHP, MySQL, MongoDB, Figma, Adobe XD, Photoshop, Illustrator">
     <meta name="author" content="Filipe Mota - fmota-dev">
 
-    <link rel="stylesheet" href="./styles/style.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
     <link rel="shortcut icon" href="imgs/img-principal.svg" type="image/svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +19,15 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <script src="js/plugins/simple-anime.js" defer></script>
-    <script src="js/main.js" defer></script>
-    <script src="js/menu-mobile.js" defer></script>
-    <script src="js/voltar-ao-topo.js" defer></script>
-    <script src="js/enviar-mensagem.js" defer></script>
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
+
+    <script src="./assets/js/plugins/simple-anime.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/menu-mobile.js" defer></script>
+    <script src="./assets/js/voltar-ao-topo.js" defer></script>
+    <script src="./assets/js/enviar-mensagem.js" defer></script>
     <title>fmota.dev</title>
 </head>
 
@@ -36,7 +40,7 @@
         <div class="container">
             <div class="logo">
                 <a href="">
-                    <img src="./imgs/logo.svg" alt="Logo fmota-dev">
+                    <img src="../assets/imgs/logo.svg" alt="Logo fmota-dev">
                 </a>
             </div>
 
@@ -83,15 +87,15 @@
         <section class="inicio" id="inicio">
             <div class="container">
                 <div class="txt-inicio">
-                    <h1 data-anime="200">Muito prazer, <span data-anime="200">me chamo Filipe Mota.</span></h1>
+                    <h1 class="fadeInDown" data-anime="200">Muito prazer, <span data-anime="200">me chamo Filipe Mota.</span></h1>
 
-                    <p data-anime="400">Atualmente, estou imerso no universo do Desenvolvimento Web, concentrando meus estudos nas áreas
+                    <p class="fadeInDown" data-anime="400">Atualmente, estou imerso no universo do Desenvolvimento Web, concentrando meus estudos nas áreas
                         de front-end, back-end e Mobile. Além de me especializar em UX/UI Designer.</p>
 
-                    <p data-anime="400"> Estou entusiasmado em aplicar essas habilidades e conhecimentos no cenário do Desenvolvimento
+                    <p class="fadeInDown" data-anime="600"> Estou entusiasmado em aplicar essas habilidades e conhecimentos no cenário do Desenvolvimento
                         Web, contribuindo para projetos inovadores e desafiadores.</p>
 
-                    <div class="btn-social">
+                    <div class="btn-social fadeInDown" data-anime="800">
                         <a href="https://wa.me/5584988139069" target="_blank">
                             <button aria-label="Botão whatsapp">
                                 <i class="bi bi-whatsapp"></i>
@@ -113,7 +117,7 @@
                 </div>
 
                 <div class="img-inicio">
-                    <img src="./imgs/img-principal.svg" alt="Imagem de um desenvolvedor">
+                    <img data-anime="600" src="../assets/imgs/img-principal.svg" alt="Imagem de um desenvolvedor">
                 </div>
             </div>
         </section>
@@ -121,7 +125,7 @@
         <section class="formacao linha-detalhe" id="formacao">
             <div class="container">
                 <div class="img-formacao">
-                    <img src="./imgs/img-sobre.svg" alt="Imagem de um desenvolvedor">
+                    <img src="../assets/imgs/img-sobre.svg" alt="Imagem de um desenvolvedor">
                 </div>
                 <div class="txt-formacao ">
                     <h2 class="titulo ">minha <span>formação.</span></h2>
@@ -155,32 +159,32 @@
                     meus <span>projetos.</span>
                 </h2>
                 <div class="box-projetos">
-                    <div class="img-projeto" style="background-image: url(imgs/bikcraft.jpg);">
+                    <div class="img-projeto" style="background-image: url(./assets/imgs/bikcraft.jpg);">
                         <div class="overlay">
                             <a href="https://fmota-dev.github.io/projeto-bikcraft/" target="_blank">Bikcraft
-                                <img src="./imgs/icon-link.svg" alt="">
+                                <img src="./assets/imgs/icon-link.svg" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="img-projeto" style="background-image: url(imgs/canesfit.jpg);">
+                    <div class="img-projeto" style="background-image: url(./assets/imgs/canesfit.jpg);">
                         <div class="overlay">
                             <a href="https://fmota-dev.github.io/projeto-canesfit/" target="_blank">Canesfit
-                                <img src="./imgs/icon-link.svg" alt="">
+                                <img src="./assets/imgs/icon-link.svg" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="img-projeto" style="background-image: url(imgs/flexblog.jpg);">
+                    <div class="img-projeto" style="background-image: url(./assets/imgs/flexblog.jpg);">
                         <div class="overlay">
                             <a href="https://fmota-dev.github.io/projeto-flexblog/" target="_blank">Flexblog
-                                <img src="./imgs/icon-link.svg" alt="">
+                                <img src="./assets/imgs/icon-link.svg" alt="">
                             </a>
 
                         </div>
                     </div>
-                    <div class="img-projeto" style="background-image: url(imgs/wildbeast.jpg);">
+                    <div class="img-projeto" style="background-image: url(./assets/imgs/wildbeast.jpg);">
                         <div class="overlay">
                             <a href="https://fmota-dev.github.io/projeto-wildbeast/" target="_blank">Wildbeast
-                                <img src="./imgs/icon-link.svg" alt="">
+                                <img src="./assets/imgs/icon-link.svg" alt="">
                             </a>
                         </div>
                     </div>

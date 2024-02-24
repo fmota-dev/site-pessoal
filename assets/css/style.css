@@ -1,0 +1,10 @@
+@import './global/global.css';
+@import './global/header.css';
+@import './global/cores.css';
+@import './global/animacoes.css';
+
+@import './inicio.css';
+@import './formacao.css';
+@import './projetos.css';
+@import './formulario.css';
+
