@@ -1,66 +1,66 @@
 .formacao {
-  padding: 4.5rem 4%;
-  border-bottom: 1px solid var(--cor-p3);
+	padding: 4.5rem 4%;
+	border-bottom: 1px solid var(--cor-p3);
 }
 
 .formacao .container {
-  justify-content: space-between;
-  align-items: center;
-  gap: 90px;
+	justify-content: space-between;
+	align-items: center;
+	gap: 90px;
 }
 
 .formacao .txt-formacao h2 > span {
-  color: var(--cor-p1);
+	color: var(--cor-p1);
 }
 
 .formacao .card-formacao {
-  margin: 40px 0;
-  padding: 20px;
-  line-height: calc(1rem * 1.5);
-  background-color: var(--cor-g04);
-  border-radius: 10px;
-  box-shadow: 0 0 3px var(--cor-p1);
-  border-right: 15px solid var(--cor-p1);
+	margin: 40px 0;
+	padding: 20px;
+	line-height: calc(1rem * 1.5);
+	background-color: var(--cor-g04);
+	border-radius: 10px;
+	box-shadow: 0 0 3px var(--cor-p1);
+	border-right: 15px solid var(--cor-p1);
 }
 
 .formacao .card-formacao h3 {
-  color: var(--cor-g00);
-  font-size: 1.25rem;
-  line-height: 2.625rem;
-  position: relative;
+	color: var(--cor-g00);
+	font-size: 1.25rem;
+	line-height: 2.625rem;
+	position: relative;
 }
 
 .formacao .card-formacao p {
-  color: var(--cor-g01);
-  font-size: 1rem;
-  line-height: 1.5rem;
+	color: var(--cor-g01);
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 
 .formacao .txt-formacao .card-formacao span {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: var(--cor-p2);
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	color: var(--cor-p2);
 
-  display: inline-block;
-  margin-top: 20px;
+	display: inline-block;
+	margin-top: 20px;
 }
 
 .formacao .img-formacao img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 @media (max-width: 1100px) {
-  .formacao .img-formacao img {
-    display: none;
-  }
+	.formacao .img-formacao img {
+		display: none;
+	}
 }
 
 @media (max-width: 550px) {
-  section.formacao {
-    margin: 0;
-  }
+	section.formacao {
+		margin: 0;
+	}
 
-  section.formacao .container {
-    gap: 0px;
-  }
+	section.formacao .container {
+		gap: 0px;
+	}
 }
