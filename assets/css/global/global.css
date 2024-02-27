@@ -60,6 +60,7 @@ form .btn-enviar input[type='submit']:hover {
 h2.titulo {
 	color: var(--cor-g00);
 	font-size: 3.5rem;
+	white-space: nowrap;
 	margin-bottom: 75px;
 }
 

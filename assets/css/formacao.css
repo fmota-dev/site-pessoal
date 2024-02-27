@@ -58,13 +58,9 @@
 		align-items: normal;
 		gap: 0px;
 	}
-
-	.formacao h2 {
-		text-align: center;
-	}
 }
 
-@media (max-width: 550px) {
+@media (max-width: 560px) {
 	section.formacao {
 		margin: 0;
 	}
