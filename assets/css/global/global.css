@@ -59,8 +59,7 @@ form .btn-enviar input[type='submit']:hover {
 
 h2.titulo {
 	color: var(--cor-g00);
-	font-size: 3.5rem;
-	white-space: nowrap;
+	font-size: 3.2rem;
 	margin-bottom: 75px;
 }
 
@@ -101,6 +100,6 @@ footer p {
 
 @media (max-width: 550px) {
 	html {
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 }
