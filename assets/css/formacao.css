@@ -53,6 +53,14 @@
 	.formacao .img-formacao img {
 		display: none;
 	}
+
+	.formacao .container {
+		align-items: normal;
+	}
+
+	.formacao h2 {
+		text-align: center;
+	}
 }
 
 @media (max-width: 550px) {
