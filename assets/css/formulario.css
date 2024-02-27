@@ -1,75 +1,83 @@
 .formulario {
-  padding: 40px 4%;
+	padding: 40px 4%;
 }
 
 .formulario .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 500px;
 }
 
 .formulario h2 {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 .txt-formulario {
-  min-width: 100%;
-  margin-top: 50px;
+	min-width: 100%;
+	margin-top: 50px;
 }
 
 form {
-  max-width: 500px;
-  padding-top: 30px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
+	max-width: 500px;
+	padding-top: 30px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 15px;
 }
 
 form label {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--cor-g00);
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--cor-g00);
 }
 
 form label span {
-  color: var(--cor-p2);
+	color: var(--cor-p2);
 }
 
 form textarea {
-  width: 100%;
-  background-color: #242424;
-  border: 0;
-  outline: 0;
-  padding: 20px 15px;
-  border-radius: 15px;
-  color: var(--cor-g00);
-  font-size: 1rem;
-  resize: none;
-  max-height: 150px;
+	width: 100%;
+	background-color: #242424;
+	border: 0;
+	padding: 20px 15px;
+	border-radius: 15px;
+	color: var(--cor-g00);
+	font-size: 1rem;
+	resize: none;
+	max-height: 150px;
+}
+
+form textarea:focus {
+	outline: 1px solid var(--cor-p3);
 }
 
 form button.btn-contato {
-  padding: 0.625rem 1.5rem;
-  border: none;
-  background: var(--gradiente);
-  border-radius: 40px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
+	padding: 0.625rem 1.5rem;
+	margin-right: 20px;
+	border: none;
+	background: var(--gradiente);
+	border-radius: 40px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+form button.btn-contato i {
+	padding-left: 5px;
 }
 
 .btn-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
 }
 
 @media (max-width: 1100px) {
-  div.box-fale-comigo {
-    margin-bottom: 40px;
-  }
+	div.box-fale-comigo {
+		margin-bottom: 40px;
+	}
 }
