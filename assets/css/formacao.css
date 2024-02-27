@@ -56,6 +56,7 @@
 
 	.formacao .container {
 		align-items: normal;
+		gap: 0px;
 	}
 
 	.formacao h2 {
