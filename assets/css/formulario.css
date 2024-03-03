@@ -63,6 +63,7 @@ form button.btn-contato {
 	font-size: 1rem;
 	font-weight: 600;
 	cursor: pointer;
+	transition: 0.2s ease-in-out;
 }
 
 form button.btn-contato i {
