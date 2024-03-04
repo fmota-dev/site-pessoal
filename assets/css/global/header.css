@@ -9,8 +9,16 @@ header > .container {
 	align-items: center;
 }
 
+header .logo {
+	transition: ease-in-out 0.3s;
+}
+
 header .logo a {
 	padding: 0;
+}
+
+header .logo:hover{
+	transform: scale(1.1);
 }
 
 .menu-desktop {
