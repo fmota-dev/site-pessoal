@@ -1,37 +1,38 @@
-// Menu Mobile
-let btnMenu = document.getElementById('btn-menu');
-let menuMobile = document.getElementById('menu-mobile');
-let overlay = document.getElementById('overlay-menu');
 
-btnMenu.addEventListener('click', () => {
-	menuMobile.classList.add('abrir-menu');
-});
+function menuMobile() {
+	let btnMenu = document.getElementById('btn-menu');
+	let menuMobile = document.getElementById('menu-mobile');
+	let overlay = document.getElementById('overlay-menu');
+	btnMenu.addEventListener('click', () => {
+		menuMobile.classList.add('abrir-menu');
+	});
 
-menuMobile.addEventListener('click', () => {
-	menuMobile.classList.remove('abrir-menu');
-});
+	menuMobile.addEventListener('click', () => {
+		menuMobile.classList.remove('abrir-menu');
+	});
 
-overlay.addEventListener('click', () => {
-	menuMobile.classList.remove('abrir-menu');
-});
+	overlay.addEventListener('click', () => {
+		menuMobile.classList.remove('abrir-menu');
+	});
+}
 
-// Botão Voltar ao Topo
-const btnVoltarAoTopo = document.getElementById('voltar-ao-topo');
+function addScrollToTopButton() {
+	const btnVoltarAoTopo = document.getElementById('voltar-ao-topo');
 
-window.addEventListener('scroll', () => {
-	if (window.scrollY > 300 && window.innerWidth > 550) {
-		btnVoltarAoTopo.style.display = 'block';
-	} else {
-		btnVoltarAoTopo.style.display = 'none';
-	}
-});
+	window.addEventListener('scroll', () => {
+		if (window.scrollY > 300 && window.innerWidth > 550) {
+			btnVoltarAoTopo.style.display = 'block';
+		} else {
+			btnVoltarAoTopo.style.display = 'none';
+		}
+	});
 
-btnVoltarAoTopo.addEventListener('click', (event) => {
-	event.preventDefault();
-	window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+	btnVoltarAoTopo.addEventListener('click', (event) => {
+		event.preventDefault();
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	});
+}
 
-// Enviar Mensagem
 function enviarMensagem() {
 	const mensagemUsuario = document.getElementById('mensagem').value;
 	if (mensagemUsuario.trim() != '') {
@@ -42,13 +43,40 @@ function enviarMensagem() {
 	}
 }
 
+function limparURL() {
+	window.onload = function () {
+		if (window.location.search.length > 0) {
+			const novaURL = window.location.href.split('?')[0];
+			window.history.replaceState({}, document.title, novaURL);
+		}
+	};
+}
+
+function initAnimationScroll() {
+	const sections = document.querySelectorAll('.js-scroll');
+
+	if (sections.length) {
+		const windowMetade = window.innerHeight * 0.6;
+		function animaScroll() {
+			sections.forEach((section) => {
+				const sectionTop = section.getBoundingClientRect().top;
+				const isSectionVisible = sectionTop - windowMetade < 0;
+				if (isSectionVisible) {
+					section.classList.add('ativo');
+				} else {
+					section.classList.remove('ativo');
+				}
+			});
+		}
+		animaScroll();
+		window.addEventListener('scroll', animaScroll);
+	}
+}
+
 const botaoEnviar = document.getElementById('enviar-mensagem');
 botaoEnviar.addEventListener('click', enviarMensagem);
 
-// Limpar URL
-window.onload = function () {
-	if (window.location.search.length > 0) {
-		const novaURL = window.location.href.split('?')[0];
-		window.history.replaceState({}, document.title, novaURL);
-	}
-};
+menuMobile();
+addScrollToTopButton();
+limparURL();
+initAnimationScroll();
