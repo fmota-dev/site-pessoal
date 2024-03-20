@@ -14,6 +14,26 @@
   gap: 40px;
 }
 
+.box-projetos .img-projeto:nth-child(1) {
+  background-image: url(../imgs/bikcraft.jpg);
+}
+
+.box-projetos .img-projeto:nth-child(2) {
+  background-image: url(../imgs/canesfit.jpg);
+}
+
+.box-projetos .img-projeto:nth-child(3) {
+  background-image: url(../imgs/surfnat.png);
+}
+
+.box-projetos .img-projeto:nth-child(4) {
+  background-image: url(../imgs/wildbeast.jpg);
+}
+
+.box-projetos .img-projeto:nth-child(5) {
+  background-image: url(../img/projeto5.jpg);
+}
+
 .img-projeto {
   box-shadow: 0 0 3px var(--cor-p1);
   height: 500px;
