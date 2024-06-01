@@ -1,8 +1,8 @@
 :root {
-  --cor-p1: #44e868;
+  --cor-p1: #16c64f;
   --cor-p2: #18b549;
-  --cor-p3: #1e751b;
-  --gradiente: linear-gradient(85.95deg, #44e868 3.35%, #32d257 96.73%);
+  --cor-p3: #008440;
+  --gradiente: linear-gradient(85.95deg, #16c64f 3.35%, #18b549 96.73%);
 
   --cor-g05: #000000;
   --cor-g04: #0e0e0e;
