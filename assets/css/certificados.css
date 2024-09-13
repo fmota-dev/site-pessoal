@@ -1,0 +1,54 @@
+#certificacoes .container {
+  flex-direction: column;
+}
+
+.certificacoes {
+  padding: 4.5rem 4%;
+  border-bottom: 1px solid var(--cor-p3);
+  background-color: var(--cor-g04);
+}
+
+.certificados {
+  display: flex;
+  gap: 20px;
+}
+
+.box-certificados img {
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.badges {
+  display: flex;
+  margin-top: 40px;
+}
+
+.certificacoes h3 {
+  font-size: 2rem;
+  color: var(--cor-p2);
+  margin-top: 40px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-radius: 10px;
+  padding: 20px 20px 0 20px;
+  background-color: #fafafa;
+  box-shadow: 0 0 3px var(--cor-p1);
+}
+
+.badges iframe {
+  display: block;
+  flex: 1;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (width <= 580px) {
+  .certificados {
+    flex-wrap: wrap;
+  }
+}
