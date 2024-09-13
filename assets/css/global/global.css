@@ -94,7 +94,6 @@ footer p {
 @media (max-width: 1100px) {
   .container {
     flex-direction: column-reverse;
-    align-items: center;
   }
 
   h2.titulo {
