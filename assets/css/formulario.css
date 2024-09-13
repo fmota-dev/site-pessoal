@@ -1,5 +1,6 @@
 .formulario {
 	padding: 40px 4%;
+  background-color: var(--cor-g04);
 }
 
 .formulario .container {
