@@ -1,18 +1,60 @@
 function menuMobile() {
-	const btnMenu = document.getElementById("btn-menu");
-	const menuMobile = document.getElementById("menu-mobile");
-	const overlay = document.getElementById("overlay-menu");
-	btnMenu.addEventListener("click", () => {
-		menuMobile.classList.add("abrir-menu");
-	});
+	const menuButton = document.querySelector('[data-menu="button"]');
+	const menuList = document.querySelector('[data-menu="list"]');
+	const eventos = ["click", "touchstart"];
 
-	menuMobile.addEventListener("click", () => {
-		menuMobile.classList.remove("abrir-menu");
-	});
+	if (menuButton && menuList) {
+		function toggleMenu(event) {
+			event.preventDefault();
+			if (menuList.classList.contains("active")) {
+				menuList.classList.remove("active");
+				menuButton.classList.remove("active", "fixed"); // Remove a classe fixed
+			} else {
+				menuList.classList.add("active");
+				menuButton.classList.add("active", "fixed"); // Adiciona a classe fixed
+				outsideClick(menuList, eventos, () => {
+					menuList.classList.remove("active");
+					menuButton.classList.remove("active", "fixed"); // Remove a classe fixed
+				});
+			}
+		}
 
-	overlay.addEventListener("click", () => {
-		menuMobile.classList.remove("abrir-menu");
-	});
+		function closeMenu() {
+			menuList.classList.remove("active");
+			menuButton.classList.remove("active", "fixed"); // Remove a classe fixed
+		}
+
+		for (const evento of eventos) {
+			menuButton.addEventListener(evento, toggleMenu);
+		}
+
+		// Adiciona um ouvinte de evento para todos os links dentro do menu
+		const menuLinks = menuList.querySelectorAll("a");
+		for (const link of menuLinks) {
+			link.addEventListener("click", closeMenu);
+		}
+	}
+}
+
+function outsideClick(element, events, callback) {
+	const html = document.documentElement;
+	const outside = "data-outside";
+
+	if (!element.hasAttribute(outside)) {
+		for (const userEvent of events) {
+			setTimeout(() => html.addEventListener(userEvent, handleOutsideClick));
+		}
+		element.setAttribute(outside, "");
+	}
+	function handleOutsideClick(event) {
+		if (!element.contains(event.target)) {
+			element.removeAttribute(outside);
+			for (const userEvent of events) {
+				html.removeEventListener(userEvent, handleOutsideClick);
+			}
+			callback();
+		}
+	}
 }
 
 function addScrollToTopButton() {
