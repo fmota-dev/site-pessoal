@@ -53,7 +53,7 @@
     display: none;
     position: fixed;
     background: #000;
-    width: 40%; /* Ajuste a largura do menu móvel */
+    width: 60%; /* Ajuste a largura do menu móvel */
     height: 100%; /* Ocupa toda a altura da tela */
     z-index: 200;
     top: 0;
