@@ -8,27 +8,26 @@ function menuMobile() {
 			event.preventDefault();
 			if (menuList.classList.contains("active")) {
 				menuList.classList.remove("active");
-				menuButton.classList.remove("active", "fixed"); // Remove a classe fixed
+				menuButton.classList.remove("active", "fixed");
 			} else {
 				menuList.classList.add("active");
-				menuButton.classList.add("active", "fixed"); // Adiciona a classe fixed
+				menuButton.classList.add("active", "fixed");
 				outsideClick(menuList, eventos, () => {
 					menuList.classList.remove("active");
-					menuButton.classList.remove("active", "fixed"); // Remove a classe fixed
+					menuButton.classList.remove("active", "fixed");
 				});
 			}
 		}
 
 		function closeMenu() {
 			menuList.classList.remove("active");
-			menuButton.classList.remove("active", "fixed"); // Remove a classe fixed
+			menuButton.classList.remove("active", "fixed");
 		}
 
 		for (const evento of eventos) {
 			menuButton.addEventListener(evento, toggleMenu);
 		}
 
-		// Adiciona um ouvinte de evento para todos os links dentro do menu
 		const menuLinks = menuList.querySelectorAll("a");
 		for (const link of menuLinks) {
 			link.addEventListener("click", closeMenu);
@@ -46,6 +45,7 @@ function outsideClick(element, events, callback) {
 		}
 		element.setAttribute(outside, "");
 	}
+
 	function handleOutsideClick(event) {
 		if (!element.contains(event.target)) {
 			element.removeAttribute(outside);

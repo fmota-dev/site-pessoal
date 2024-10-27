@@ -49,6 +49,7 @@
 }
 
 .inicio .img-inicio img {
+	width: 530px;
 	max-width: 100%;
 	position: relative;
 	animation: flutuar 2s ease-in-out infinite alternate;
